@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
     return (
-        <nav className='navbar navbar-expand navbar-light bg-light fixed-top shadow-sm py-3 '>
+        <nav className='navbar navbar-expand navbar-light bg-light fixed-top shadow-sm py-1 '>
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
                     <img src="icon_feel.png" alt="" width="74" height="74" className="d-inline-block align-text-center" />
