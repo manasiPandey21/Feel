@@ -13,8 +13,8 @@ const Navbar = () => {
             </div>
 
             <div className='collapse navbar-collapse p-5'>
-                <a href="/login" className='fs-3 px-3 text-decoration-none text-dark'>Login</a>
-                <a href="/logout" className='fs-3 px-3 text-decoration-none text-dark'>Logout</a>
+                <a href="/login" className='fs-3 px-3 text-decoration-none text-dark fw-bold'>Login</a>
+                <a href="/logout" className='fs-3 px-3 text-decoration-none text-dark fw-bold'>Logout</a>
             </div>
         </nav>
     )
