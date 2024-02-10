@@ -1,5 +1,6 @@
 .home-page-container {
     position: static;
+    left: 80%;
   }
   
   .background-image {
@@ -25,13 +26,23 @@
     background-color: #f8f9fa; /* Change the background color on hover if needed */
   }
   .category-section {
-    margin-bottom: 500px; /* Adjust margin as needed */
+    margin-bottom: 500px; 
+    left: 70%;
+    
+    
+    
   }
   
   .catalog-section {
+    font-size: 34px;
+    text-align: center;
     background-color: #f8f9fa; 
-    padding: 100px 0; /* Adjust padding as needed */
+    padding: 20px 0; /* Adjust padding as needed */
+    margin-bottom: 1rem;
     
+
+  margin-left: auto; /* Center horizontally */
+  margin-right: 0;
   }
   
   .background-image {
@@ -101,4 +112,55 @@
 .box h2 {
   font-size: 2.5rem; /* Increase font size for the heading */
   text-align: center; /* Center the heading horizontally */
+}
+.tagline-heading-container {
+  position: absolute;
+  left: 50%;
+  margin-bottom: 2rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  
+}
+
+.tagline-heading {
+  margin-top: 14rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tagline-heading-container p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Chatbot.css */
+.chatbot-icon::after {
+  content: "Hi there! I'm WIZi";
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+  z-index: 1;
+  display: block; /* Change from 'none' to 'block' */
+}
+/* Story button */
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Adjust top margin as needed */
+  margin-bottom: 20px; /* Adjust bottom margin as needed */
+}
+
+.button-container button {
+  margin: 0 10px; /* Adjust horizontal margin between buttons */
 }

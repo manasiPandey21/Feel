@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import category from './databases/category';
 import catalog from './databases/catalog';
 import StoryModal from './StoryModal';
+import { BiPlus } from 'react-icons/bi';
+
 import './Home_page.css';
 
 const Home_page = () => {
@@ -52,8 +54,15 @@ const Home_page = () => {
 
   return (
     <div className="home-page-container">
+      {/* Tagline heading on the left-center side */}
+      <div className="tagline-heading-container">
+        <h1 className="tagline-heading">Strength in Every Struggle, Hope in Every Heart</h1>
+        <p>Feel is your inclusive online community for mental well-being, offering support, resources, and a safe space to share stories and find inspiration on the journey to healing.</p>
+      </div>
+
       {/* Section 1: Category selection */}
       <section className="category-section">
+     
         <div className="text-center mx-auto p-5 m-5" style={{ maxWidth: '500px' }}>
           <div className="card-body shadow-lg p-5">
             <h5 className="card-title mb-4 fs-1  py-4 fw-bolder">{selectedCategory || 'Select a category'}</h5>
@@ -95,9 +104,15 @@ const Home_page = () => {
             </p>
           </div>
         </div>
+        <div className="button-container">
+    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
+    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Community Chat</button>
+  </div>
       </section>
-
+       
       <section className="catalog-section">
+       
+        <h1 className="heading-for-stories">Stories</h1>
         <div className="row">
           {catalog.map((item) => (
             <div key={item.id} className="col-md-4 mb-4">
@@ -110,7 +125,7 @@ const Home_page = () => {
                     className="btn btn-success"
                     onClick={() => openModal(item.story)}
                   >
-                    Read more
+                    Story <BiPlus />
                   </button>
                 </div>
               </div>
@@ -120,8 +135,10 @@ const Home_page = () => {
       </section>
 
       <div className="background-image p-3" style={{ backgroundImage: `url(${getCategoryImage()})` }}></div>
+      
+
       <div className='right-bottom position-fixed chatbot-icon' style={{ bottom: '10px', right: '10px' }}>
-        <a href="https://65c70fbe79610734614c6f09--gorgeous-moxie-e4f709.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a href="https://65c7bee279610793254c6dc9--incomparable-bombolone-800cda.netlify.app/" target="_blank" rel="noopener noreferrer">
           <img
             src="logos.jpg"
             alt="Chatbot Icon"

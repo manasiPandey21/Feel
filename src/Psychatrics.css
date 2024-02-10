@@ -1,16 +1,25 @@
 /* Psychatrics.css */
 .no-border .list-group-item {
-    border: none;
-  }
-  .equal-height {
-    height: 100%;
-  }
+  border: none;
+}
+
+.equal-height {
+  height: 100%;
+  max-width: 500px;
+}
+
+.equal-height:hover {
+  transform: translateY(-5px); /* Move the card 5px up when hovered */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.equal-image {
+  height: 300px; /* Set your desired image height */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.list-item-qualifications {
+  display: flex;
+  align-items: center;
   
-  .equal-image {
-    height: 200px; /* Set your desired image height */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-  }
-  .list-item-qualifications {
-    display: flex;
-    align-items: center;
-  }
+}

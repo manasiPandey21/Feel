@@ -7,8 +7,8 @@ const Psychatrics = () => {
     <div className="container px-5">
       <div className="row">
         {p.map((psychiatrist) => (
-          <div key={psychiatrist.id} className="col-md-2 mb-4">
-            <div className="card equal-height mx-5 shadow-lg" style={{ width: '20rem', margin: '0.5rem' }}>
+          <div key={psychiatrist.id} className="col-md-4 mb-4 ">
+            <div className="card equal-height mx-5 shadow-lg" style={{ width: '35rem', margin: '0.5rem' }}>
               <img src={psychiatrist.image} className="card-img-top equal-image" alt={`${psychiatrist.name} Image`} />
               <div className="card-body px-3 mx-3">
                 <h5 className="card-title">{psychiatrist.name}</h5>
@@ -22,7 +22,7 @@ const Psychatrics = () => {
                   <span className='fw-bold'>Achievements: </span>{psychiatrist.achievements}
                 </li>
               </ul>
-              <div className="card-body">
+              <div className="card-body ">
                 <a href={psychiatrist.website} className="card-link" target="_blank" rel="noopener noreferrer">Website</a>
               </div>
             </div>
