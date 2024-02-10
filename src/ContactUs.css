@@ -1,0 +1,55 @@
+.container {
+    width: 200px; /* Set width to create a square shape */
+    margin: 50px auto; /* Center the container horizontally with top margin */
+    padding: 40px; /* Apply padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the container */
+    border-radius: 10px; /* Apply border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add shadow for depth */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 22px); /* Adjust as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px; /* Adjust as needed */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #status {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

@@ -1,9 +1,9 @@
+import AboutUs from './AboutUs';
 import './App.css';
 import Home_page from './Home_page';
 import Navbar from './Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Psychatrics from './Psychatrics';
-import AboutUs from './AboutUs';
 import Contact from './Contact';
 
 function App() {
