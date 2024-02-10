@@ -18,6 +18,47 @@ a {
 li {
   list-style: none;
 }
+.menu-link {
+  grid-column: 3/4;
+  /* background-color: aquamarine; */
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rounded-rectangular-link {
+  display: inline-block;
+  border: 2px solid grey; /* Black border */
+  border-radius: 30px; /* Adjust the border radius as needed for rounded rectangles */
+  padding: 7px; /* Adjust the padding as needed */
+  margin: 15px 25px 5px 0; /* Adjust the margin as needed */
+  text-decoration: none; /* Remove underline */
+  color: grey; /* Text color */
+  text-decoration: none;
+}
+
+/* Customize background color on hover for rounded rectangular links */
+.rounded-rectangular-link:hover {
+  text-decoration: none;
+  background-color: #f0f0f0; /* Customize background color on hover */
+}
+.menu-link ul li {
+  font-size: 1.8rem;
+}
+
+.menu-link ul li a {
+  color: rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+}
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
 
 /* navbar style start  */
 /* .main-nav {
