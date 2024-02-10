@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
 }
+.main-nav{
+  height: 10rem;
+}
 
 html {
   font-size: 62.5%;
@@ -156,6 +159,37 @@ li {
 .hero-section p {
   font-size: 3rem;
   text-transform: capitalize;
+}
+.submenu {
+  list-style-type: none;
+  padding: 5px 0; /* Adjust the top and bottom padding as needed */
+  margin: 0;
+  height: 8rem;
+  position: absolute;
+  top: 100%; /* Position the submenu below the parent link */
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #fff; /* Set background color */
+  border: 1px solid #ddd; /* Add a border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+  z-index: 1000; /* Set a higher z-index to make sure it appears above other elements */
+}
+
+.submenu li {
+  padding: 3px 5px; /* Adjust the top and bottom padding, and left and right padding as needed */
+  line-height: 1.2; /* Adjust the line height as needed */
+}
+
+
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.submenu a:hover {
+  background-color: #f0f0f0;
 }
 
 .hero-section h1 {

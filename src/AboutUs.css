@@ -1,0 +1,41 @@
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .about-us-text {
+    width: 70%; /* Adjust as needed */
+    
+  }
+  
+  .about-us-heading {
+    text-align: center;
+    font-size: 3rem; /* Adjust the font size as needed */
+    font-weight: bold; 
+  }
+  
+  .about-us-content {
+    padding: 0 20px; /* Adjust as needed */
+  }
+  
+  .about-us-content p {
+    padding: 10px 0; /* Adjust as needed */
+    font-size: 1.4rem; /* Adjust as needed */
+  }
+  
+  .about-us-image {
+    width: 40%; /* Adjust as needed */
+  }
+  
+  .about-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border radius for image */
+  }
+  .about-us-text {
+    width: 50%; /* Adjust as needed */
+    text-align: center; /* Center align the text */
+  }

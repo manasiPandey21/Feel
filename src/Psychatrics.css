@@ -1,0 +1,16 @@
+/* Psychatrics.css */
+.no-border .list-group-item {
+    border: none;
+  }
+  .equal-height {
+    height: 100%;
+  }
+  
+  .equal-image {
+    height: 200px; /* Set your desired image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  }
+  .list-item-qualifications {
+    display: flex;
+    align-items: center;
+  }
