@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import category from './databases/category';
 import catalog from './databases/catalog';
 import StoryModal from './StoryModal';
-import { BiPlus } from 'react-icons/bi';
+
 
 import './Home_page.css';
 
@@ -60,6 +60,10 @@ const Home_page = () => {
     const selectedCategoryObject = category.find((categoryItem) => categoryItem.name === selectedCategory);
     return selectedCategoryObject ? selectedCategoryObject.image : 'https://img.freepik.com/premium-photo/silhouette-young-women-birds_488220-10591.jpg';
   };
+  const openForm = () => {
+    // Open the specified link when the button is clicked
+    window.open('https://forms.gle/PvqRknwSYGubfHv47');
+  };
 
   return (
     <div className="home-page-container">
@@ -114,6 +118,7 @@ const Home_page = () => {
           </div>
         </div>
         <div className="button-container">
+<<<<<<< HEAD
   <button type="button" className="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
   <div className="dropdown">
       <button class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -127,6 +132,11 @@ const Home_page = () => {
     </div>
 </div>
 
+=======
+    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 " onClick={openForm}>Add your story</button>
+    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Community Chat</button>
+  </div>
+>>>>>>> c44672c276baacf4999167d26cb5292b93ca3918
       </section>
        
       <section className="catalog-section">
@@ -141,10 +151,10 @@ const Home_page = () => {
                   <p className="card-text fs-4">{`${item.story.substring(0, 100)}...`}</p>
                   <button
                     type="button"
-                    className="btn btn-success"
+                    className="btn btn-success fs-4 px-3"
                     onClick={() => openModal(item.story)}
                   >
-                    Story <BiPlus />
+                    Story 
                   </button>
                 </div>
               </div>
