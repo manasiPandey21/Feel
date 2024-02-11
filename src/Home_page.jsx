@@ -118,7 +118,6 @@ const Home_page = () => {
           </div>
         </div>
         <div className="button-container">
-<<<<<<< HEAD
   <button type="button" className="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
   <div className="dropdown">
       <button class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -132,11 +131,6 @@ const Home_page = () => {
     </div>
 </div>
 
-=======
-    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 " onClick={openForm}>Add your story</button>
-    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Community Chat</button>
-  </div>
->>>>>>> c44672c276baacf4999167d26cb5292b93ca3918
       </section>
        
       <section className="catalog-section">
