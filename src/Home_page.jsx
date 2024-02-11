@@ -11,6 +11,11 @@ const Home_page = () => {
   const [showCategoryList, setShowCategoryList] = useState(false);
   const [selectedStory, setSelectedStory] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCommunityOpen, setIsCommunityOpen] = useState(false);
+
+  const toggleCommunity = () => {
+    setIsCommunityOpen(!isCommunityOpen);
+  };
 
   const handleSelectCategory = (categoryName) => {
     setSelectedCategory(categoryName);
@@ -21,6 +26,10 @@ const Home_page = () => {
     setShowCategoryList(!showCategoryList);
   };
 
+  const openInNewWindow = (url) => {
+    window.open(url, '_blank');
+  };
+  
   const openModal = (story) => {
     setSelectedStory(story);
     setIsModalOpen(true);
@@ -105,9 +114,19 @@ const Home_page = () => {
           </div>
         </div>
         <div className="button-container">
-    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
-    <button type="button" class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Community Chat</button>
-  </div>
+  <button type="button" className="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
+  <div className="dropdown">
+      <button class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Community Chat
+      </button>
+      <div class="dropdown-menu  py-4 px-4 " aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item fs-3 px-3" href="#" onClick={() => openInNewWindow('https://chat-app-smriti347.onrender.com/')}>Depression</a>
+        <a class="dropdown-item fs-3 px-3" href="#" onClick={() => openInNewWindow('https://chat-app-smriti347.onrender.com/')}>Anxiety</a>
+        <a class="dropdown-item fs-3 px-3" href="#" onClick={() => openInNewWindow('https://chat-app-smriti347.onrender.com/')}>Study</a>
+      </div>
+    </div>
+</div>
+
       </section>
        
       <section className="catalog-section">
