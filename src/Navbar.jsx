@@ -46,7 +46,7 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <a href='./p' className="rounded-rectangular-link text-decoration-none">Counsellors</a>
+                            <a href='./counsellor' className="rounded-rectangular-link text-decoration-none">Counsellors</a>
                         </li>
                         <li>
                             <a href='./about' className="rounded-rectangular-link text-decoration-none">About</a>
@@ -56,11 +56,6 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className='collapse navbar-collapse p-5'>
-                <a href="/login" className='fs-3 px-3 text-decoration-none text-dark fw-bold '>Login</a>
-                <a href="/logout" className='fs-3 px-3 text-decoration-none text-dark fw-bold '>Logout</a>
-                
             </div>
         </nav>
     );
