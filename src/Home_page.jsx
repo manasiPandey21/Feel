@@ -118,7 +118,7 @@ const Home_page = () => {
           </div>
         </div>
         <div className="button-container">
-  <button type="button" className="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3">Add your story</button>
+  <button type="button" className="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3" onClick={() => openForm()}>Add your story</button>
   <div className="dropdown">
       <button class="btn btn-outline-success btn-lg fs-3 fw-Normal mx-3 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Community Chat
