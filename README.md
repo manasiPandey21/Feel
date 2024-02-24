@@ -1,3 +1,9 @@
+# Here is out Chatbot Github link
+https://github.com/Smriti347/Wizi
+
+# Here is out Group Chat Github link
+https://github.com/Smriti347/Chat-app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
